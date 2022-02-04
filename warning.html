@@ -1,0 +1,219 @@
+<html>
+    <head>
+        <title>تنبيه بالخلاص</title>
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+        crossorigin="anonymous">
+        <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+    </head>
+    <body>
+        <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01" aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+              <a class="navbar-brand" href="index.html">الصفحة الرئيسية</a>
+              <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+                    <li class="nav-item"> 
+                            <a class="nav-link Disabled" href="#">-</a>
+                          </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="ajouter.html">إضافة حريف </a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link Disabled" href="#">-</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="recherche.html">البحث عن حريف</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link Disabled" href="#">-</a>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link text-primary" href="consulter_action.php">عرض جميع الحرفاء</a>
+                </li>
+                <li class="nav-item"> 
+                    <a class="nav-link Disabled" href="#">-</a>
+                  </li>
+                <li class="nav-item">
+                    <a class="nav-link text-warning" href="warning.html">تنبيه بالخلاص</a>
+                  </li>
+                 
+                  <li class="nav-item"> 
+                    <a class="nav-link Disabled" href="#">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-danger" href="supprimer_client.html">مسح حريف</a>
+                  </li>
+                  <li class="nav-item"> 
+                    <a class="nav-link Disabled" href="#">-</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link text-info" href="modifier.html">تعديل معطيات حريف</a>
+                  </li>
+              </ul>
+             
+            </div>
+          </nav>
+
+          
+        <form class="form" method="post" action="warn.php" >
+
+            
+            <!-- todo :    periode : dep - arr 
+            duree : jrs
+
+
+            -->
+
+        <table class="table text-center">
+            <tr>
+                
+                <td><input type="number" name="cin" required></td>
+                <td>رقم بطاقة التعريف  </td>
+            </tr>
+           
+            <tr>
+            
+            <td>
+                <p>
+                    <p>من</p>
+                    <select class="form-select" aria-label="Default select example" name="from_y" required>
+                        <option selected value="" disabled>السنة</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+                    
+                    <select class="form-select" aria-label="Default select example" name="from_m" required>
+                    <option selected value="" disabled>
+                        الشهر
+                    </option>
+                    <option value="1">
+                        جانفي
+                    </option>
+                    <option value="2">
+                        فيفري
+                    </option>
+                    <option value="3">
+                        مارس
+                    </option>
+                    <option value="4">
+                        أفريل
+                    </option>
+                    <option value="5">
+                        ماي
+                    </option>  
+                    <option value="6">
+                        جوان
+                    </option>
+                    <option value="7">
+                        جويلية
+                    </option>
+                    <option value="8">
+                        أوت
+                    </option>
+                    <option value="9">
+                        سبتمبر
+                    </option>  
+                    <option value="10">
+                        أكتوبر
+                    </option>
+                    <option value="11">
+                        نوفمبر
+                    </option>
+                    <option value="12">
+                        ديسمبر
+                    </option>
+                </select>
+               
+                </p>
+                <p>
+                    <p>إلى</p>
+
+
+                    <select class="form-select" aria-label="Default select example" name="to_y" required>
+                        <option selected value="" disabled>السنة</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                        <option value="2023">2023</option>
+                        <option value="2024">2024</option>
+                        <option value="2025">2025</option>
+                        <option value="2026">2026</option>
+                        <option value="2027">2027</option>
+                        <option value="2028">2028</option>
+                        <option value="2029">2029</option>
+                        <option value="2030">2030</option>
+                    </select>
+
+
+                    <select class="form-select" aria-label="Default select example" name="to_m" required>
+                    <option selected value="" disabled>
+                        الشهر
+                    </option>
+                    <option value="1">
+                        جانفي
+                    </option>
+                    <option value="2">
+                        فيفري
+                    </option>
+                    <option value="3">
+                        مارس
+                    </option>
+                    <option value="4">
+                        أفريل
+                    </option>
+                    <option value="5">
+                        ماي
+                    </option>  
+                    <option value="6">
+                        جوان
+                    </option>
+                    <option value="7">
+                        جويلية
+                    </option>
+                    <option value="8">
+                        أوت
+                    </option>
+                    <option value="9">
+                        سبتمبر
+                    </option>  
+                    <option value="10">
+                        أكتوبر
+                    </option>
+                    <option value="11">
+                        نوفمبر
+                    </option>
+                    <option value="12">
+                        ديسمبر
+                    </option>
+                </select></p>
+            </td>
+            <td>
+                الفترة 
+            </td>
+            </tr>
+            
+            <tr>
+                <td> <input type="reset" value="مسح" class="btn btn-outline-danger"></td>
+                <td> <input type="submit" value="طباعة" class="btn btn-outline-primary"></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <div class="text-center">
+          <a href="index.html"><button class="btn btn-info"> العودة الى الصفحة الرئيسية</button> </a>  
+    </div>
+    </body>
+</html>

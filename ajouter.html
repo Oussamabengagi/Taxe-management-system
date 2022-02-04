@@ -1,0 +1,170 @@
+<html>
+
+<head>
+  <title>
+    Ajouter un client
+  </title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <meta http-equiv="Content-Type" content="text/html;charset=UTF-8">
+
+</head>
+
+<body>
+
+
+  <nav class="navbar navbar-expand-lg  navbar-dark bg-dark">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo01"
+      aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+      <a class="navbar-brand" href="index.html">الصفحة الرئيسية</a>
+      <ul class="navbar-nav mr-auto mt-2 mt-lg-0">
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">-</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="ajouter.html">إضافة حريف </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">-</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="recherche.html">البحث عن حريف</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">-</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-primary" href="consulter_action.php">عرض جميع الحرفاء</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">-</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-warning" href="warning.html">تنبيه بالخلاص</a>
+        </li>
+
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;
+            &nbsp; &nbsp; </a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-danger" href="supprimer_client.html">مسح حريف</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link Disabled" href="#">-</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link text-info" href="modifier.html">تعديل معطيات حريف</a>
+        </li>
+      </ul>
+
+    </div>
+  </nav>
+
+
+
+  <div class="text-center">
+    <h1>إضافة حريف</h1>
+  </div>
+
+  <br>
+  <br>
+  <br>
+
+
+  <hr>
+  <form class="form text-center" method="post" action="ajouter_action.php">
+    <table align="center">
+
+      <tr>
+        <td><input type="text" name="prenom_client" required></td>
+        <td><label lang="ar"> الإسم </label></td>
+
+      </tr>
+
+      <tr>
+        <td><input type="text" name="nom_client" required></td>
+        <td><label>اللقب </label></td>
+
+      </tr>
+      <tr>
+        <td><input type="text" name="adresse" required></td>
+        <td><label>عنوان المحل </label></td>
+
+      </tr>
+      <tr>
+        <td><input type="number" name="cin" required></td>
+        <td>
+          <labe>رقم بطاقة التعريف الوطنية </labe>
+        </td>
+
+      </tr>
+
+      <tr>
+        <td><input type="date" name="date_cin" required></td>
+        <td><label>تاريخ بطاقة التعريف </label></td>
+
+      </tr>
+      <tr>
+        <td><input type="date" placeholder="dd-mm-yyyy" min="1900-01-01" max="2010-12-31" name="dob" required
+            width="20%"></td>
+        <td><label>تاريخ الولادة </label></td>
+
+      </tr>
+      <tr>
+
+        <td><input type="text" name="naiss" required></td>
+
+        <td><label> مكانها</label></td>
+
+      </tr>
+      <tr>
+        <td><input type="text" name="occup" required></td>
+        <td><label>المهنة </label></td>
+      </tr>
+      <tr>
+        <td>
+          <input type="text" name="type_occup" required>
+        </td>
+        <!--    
+
+        <select class="form-select" aria-label="Default select example" name="type_occup" required>
+                    <option selected disabled value="">نوع النشاط</option>
+                    <option value="1">تاجر</option>
+                    <option value="2">صنع مرطبات</option>
+                    <option value="3">بيع الدجاج</option>
+                    <option value="4">فواكه جافة</option>
+                  </select>
+         -->
+        <td>النشاط</td>
+      </tr>
+      <tr>
+        <td><input type="number" name="num_c" required></td>
+        <td><label>رقم المحل </label></td>
+      </tr>
+
+      <tr>
+        <td><input type="number" name="montant_louer" step="0.01" required> </td>
+        <td><label>معلوم الكراء الشهري</label></td> 
+      </tr>
+      <tr>
+        <td> <button class="btn btn-primary" type="submit">إضافة</button></td>
+        <td><button class="btn btn-danger" type="reset">مسح</button></td>
+      </tr>
+    </table>
+  </form>
+  <br>
+  <br>
+
+  <br>
+  <br>
+  <br>
+  <div class="text-center">
+    <a href="index.html"><button class="btn btn-info"> العودة الى الصفحة الرئيسية</button> </a>
+  </div>
+</body>
+
+</html>

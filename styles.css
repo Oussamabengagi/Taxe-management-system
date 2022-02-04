@@ -1,0 +1,28 @@
+#div1 {
+    text-align: center;
+    width: 33.33%;
+    float: right;
+    display:inline-block;
+
+}
+#div2 {
+   text-align: center;
+    width: 33.33%;
+    float: left;
+    display:inline-block;
+
+}
+#div3 {
+   text-align: center;
+    width: 33.33%;
+    margin: 0 auto;
+    display:inline-block;
+
+}
+#in {
+    display: inline-block;
+}
+
+body {
+    background-color: black;
+}
